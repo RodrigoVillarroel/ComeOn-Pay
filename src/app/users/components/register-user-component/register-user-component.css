@@ -1,0 +1,30 @@
+.fill input{
+    background-color: #9fb9b9;
+    border: none;
+    border-bottom: 2px solid #1a1e1d;
+    color: #1a1e1d;
+    padding: 6px 4px;
+    outline: none;
+}
+
+.fill input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #9fb9b9 inset !important;
+    -webkit-text-fill-color: #1a1e1d !important;
+}
+
+.fill input:-webkit-autofill,
+.fill input:-webkit-autofill:hover,
+.fill input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px #9fb9b9 inset !important;  /* fondo */
+    -webkit-text-fill-color: #1a1e1d !important;           /* texto */
+    border-bottom: 2px solid #1a1e1d !important;           /* borde debajo */
+}
+.form-container{
+    margin: 10vh 20vw;
+    height: 600px;
+    width: 500px;
+    padding: 20px;
+    background-color: #c3dada;
+    color: #1a1e1d;
+
+}

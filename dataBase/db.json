@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": "f26d",
+      "userName": "Rodri07",
+      "email": "rodrigo@gmail.com",
+      "password": "123456",
+      "passwordConfirm": "123456",
+      "user_profile": {
+        "name": "Rodrigo ",
+        "lastName": "Villarroel",
+        "identificationNumber": 39809917,
+        "dateOfBirth": "1996-07-15",
+        "address": "F. Juan Cetz 1951"
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+<div class="form-container">
+    <form [formGroup]="form" (ngSubmit)="handleSubmit()">
+        <div class="user-section">
+            <div class="fill">
+                <label for="userName">Nombre de Usuario: </label>
+                <input type="text" id="userName" formControlName="userName" required>
+                @if (userName.dirty || userName.touched) {
+                @if (userName.hasError('required')) {
+                <span>campo requerido</span>
+                }
+                }
+            </div>
+            <div class="fill">
+                <label for="email">Email: </label>
+                <input type="email" id="email" formControlName="email" required>
+                @if (email.dirty || email.touched) {
+                @if (email.hasError('required')) {
+                <span>campo requerido</span>
+                }
+                }
+            </div>
+            <div class="fill">
+                <label for="password">Contraseña: </label>
+                <input type="password" id="password" formControlName="password" required>
+                @if (password.dirty || password.touched) {
+                @if (password.hasError('required')) {
+                <span>campo requerido</span>
+                }
+                }
+            </div>
+            <div class="fill">
+                <label for="passwordConfirm">Confirme Contraseña: </label>
+                <input type="password" id="passwordConfirm" formControlName="passwordConfirm" required>
+                @if (passwordConfirm.dirty || passwordConfirm.touched) {
+                @if (passwordConfirm.hasError('required')) {
+                <span>campo requerido</span>
+                }
+                }
+            </div>
+        </div>
+        <div class="user-profile-section" formGroupName="user_profile">
+            <div class="fill">
+                <label for="name">Nombre: </label>
+                <input type="text" id="name" formControlName="name" required>
+                @if (name.dirty || name.touched) {
+                @if (name.hasError('required')) {
+                <span>campo requerido</span>
+                }
+                }
+            </div>
+            <div class="fill">
+                <label for="lastName">Apellido: </label>
+                <input type="text" id="lastName" formControlName="lastName" required>
+                @if (lastName.dirty || lastName.touched) {
+                @if (lastName.hasError('required')) {
+                <span>campo requerido</span>
+                }
+                }
+            </div>
+            <div class="fill">
+                <label for="identificationNumber">Nro de documento: </label>
+                <input type="number" id="identificationNumber" formControlName="identificationNumber" required>
+                @if (identificationNumber.dirty || identificationNumber.touched) {
+                @if (identificationNumber.hasError('required')) {
+                <span>campo requerido</span>
+                }
+                }
+            </div>
+            <div class="fill">
+                <label for="dateOfBirth">Fecha de Nacimiento: </label>
+                <input type="date" id="dateOfBirth" formControlName="dateOfBirth" required>
+                @if (dateOfBirth.dirty || dateOfBirth.touched) {
+                @if (dateOfBirth.hasError('required')) {
+                <span>campo requerido</span>
+                }
+                }
+            </div>
+            <div class="fill">
+                <label for="address">Direccion: </label>
+                <input type="text" id="address" formControlName="address" required>
+                @if (address.dirty || address.touched) {
+                @if (address.hasError('required')) {
+                <span>campo requerido</span>
+                }
+                }
+            </div>
+        </div>
+        <div class="action-section">
+            <button type="submit">Enviar</button>
+            <button type="reset">limpiar</button>
+        </div>
+    </form>
+</div>
